@@ -43,13 +43,11 @@ begin
   else
   begin
   try
-    if frmCliente= nil then
+    if frmCliente = nil then
     begin
       Application.CreateForm(TfrmCliente, frmCliente);
       frmCliente.Show;
-    end
-    else
-      ShowWindow(frmCliente.handle, SW_SHOW);
+    end;
   except on E: Exception do
     ShowMessage('Erro ao abrir a janela de configuração.'+ ' - '+ 'Erro do tipo: ' +E.Message);
   end;

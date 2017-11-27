@@ -15,7 +15,6 @@ object frmGrupos: TfrmGrupos
   Font.Style = []
   FormStyle = fsMDIChild
   OldCreateOrder = False
-  ShowHint = False
   Visible = True
   OnClose = FormClose
   OnShow = FormShow

@@ -68,10 +68,10 @@ end;
 
 procedure TfrmConfig.btnAbrirClick(Sender: TObject);
 begin
-  if ((Length(edtDB.Text)=0)
-      or(Length(edtUsername.Text)=0)
-      or(Length(edtSenha.Text)=0)
-      or(Length(edtServer.Text)=0)) then
+  if ((Length(edtDB.Text) = 0)
+      or(Length(edtUsername.Text) = 0)
+      or(Length(edtSenha.Text) = 0)
+      or(Length(edtServer.Text) = 0)) then
   begin
     stat1.Panels[0].Text := 'CAMPO VAZIO';
     stat1.Panels[1].Text := EmptyStr;
@@ -100,7 +100,7 @@ begin
       end;
     except on E: Exception do
      begin
-       ShowMessage('ERRO AO CONECTAR AO SERVIDOR oracle : '+' '+E.Message);
+       ShowMessage('ERRO AO CONECTAR AO SERVIDOR FIREBIRD : '+' '+E.Message);
        stat1.Panels.Items[1].Text:= rg1.Items[rg1.ItemIndex]+': '+'Desconectado';
        stat1.Panels.Items[0].Text := EmptyStr;
      end;
@@ -122,7 +122,7 @@ begin
       end;
     except on E: Exception do
      begin
-       ShowMessage('ERRO AO CONECTAR AO SERVIDOR oracle : '+' '+E.Message);
+       ShowMessage('ERRO AO CONECTAR AO SERVIDOR ORACLE : '+' '+E.Message);
        stat1.Panels.Items[1].Text:= rg1.Items[rg1.ItemIndex]+': '+'Desconectado';
        stat1.Panels.Items[0].Text := EmptyStr;
      end;

@@ -107,6 +107,5 @@ begin
   except on E: Exception do
     ShowMessage('Erro ao fazer uma pesquisa.');
   end;
-  ;
 end;
 end.

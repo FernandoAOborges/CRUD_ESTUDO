@@ -163,7 +163,6 @@ begin
   finally
     FCLienteCRUD.Free;
   end;
-
 end;
 
 procedure TfrmCliente.btnProcurarClick(Sender: TObject);
@@ -195,8 +194,6 @@ begin
   finally
     FCLienteCRUD.Free;
   end;
-
-
 end;
 
 procedure TfrmCliente.chk1Click(Sender: TObject);
@@ -220,7 +217,6 @@ begin
     lblEstado.Enabled := False;
     lblCidade.Enabled := False;
   end;
-
 end;
 
 procedure TfrmCliente.dbgrd1DblClick(Sender: TObject);
@@ -296,8 +292,6 @@ begin
   except on E: Exception do
     ShowMessage(E.Message);
   end;
-
-
 end;
 
 procedure TfrmCliente.Visualizar1Click(Sender: TObject);
@@ -305,5 +299,4 @@ begin
   inherited;
   btn1Click(Sender);
 end;
-
 end.
