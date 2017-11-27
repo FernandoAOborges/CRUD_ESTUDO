@@ -49,7 +49,7 @@ begin
       frmCliente.Show;
     end;
   except on E: Exception do
-    ShowMessage('Erro ao abrir a janela de configuração.'+ ' - '+ 'Erro do tipo: ' +E.Message);
+    ShowMessage('Erro ao abrir a janela de Cliente.'+ ' - '+ 'Erro do tipo: ' +E.Message);
   end;
   end;
 end;
@@ -83,7 +83,7 @@ begin
         frmGrupos.Show;
       end;
     except on E: Exception do
-      ShowMessage('Erro ao abrir a janela de configuração.'+ ' - '+ 'Erro do tipo: ' +E.Message);
+      ShowMessage('Erro ao abrir a janela de Grupos.'+ ' - '+ 'Erro do tipo: ' +E.Message);
     end;
   end;
 end;
